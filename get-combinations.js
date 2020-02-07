@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (totalSetSize, sampleSize) => {
+function getCombinations (totalSetSize, sampleSize) {
   // build totalSet => array of integers from 0 to totalSetSize
   const totalSet = [];
   for (let n = 0; n < totalSetSize; n++) {
@@ -24,7 +22,9 @@ module.exports = (totalSetSize, sampleSize) => {
     firstIdx++;
   }
 
-  return results;
+  var results2 = results.flat()
+  console.log(results2)
+  return results2;
 
 
   function bumpLeftOfChangeIdx() {
