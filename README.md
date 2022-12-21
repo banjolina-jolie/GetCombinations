@@ -1,5 +1,5 @@
 # GetCombinations
-Get all nCr combinations
+Get all nCr combinations (unique sets of r numbers from n sequential numbers)
 
 C(n,r) = n!/(r!(n−r)!)
 
